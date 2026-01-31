@@ -1,0 +1,22 @@
+{
+  "name": "armory",
+  "owner": {
+    "name": "Ron Leung",
+    "email": "rcmleung@gmail.com"
+  },
+  "metadata": {
+    "description": "Claude plugin marketplace for AI-powered development skills",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "web-ui",
+      "description": "Build polished, production-ready web interfaces",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/web-ui"
+      ]
+    }
+  ]
+}
