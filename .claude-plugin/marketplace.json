@@ -17,6 +17,15 @@
       "skills": [
         "./skills/web-ui"
       ]
+    },
+    {
+      "name": "git-personal",
+      "description": "Personal GitHub account configuration and commit guidelines",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/git-personal"
+      ]
     }
   ]
 }
