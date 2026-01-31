@@ -1,11 +1,11 @@
 {
-  "name": "armory",
+  "name": "codeandkin-armory",
   "owner": {
-    "name": "Ron Leung",
+    "name": "codeandkin",
     "email": "rcmleung@gmail.com"
   },
   "metadata": {
-    "description": "Claude plugin marketplace for AI-powered development skills",
+    "description": "codeandkin armory - curated skills for AI-powered development",
     "version": "0.1.0"
   },
   "plugins": [
