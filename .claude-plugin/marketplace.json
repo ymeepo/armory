@@ -1,11 +1,11 @@
 {
-  "name": "codeandkin-armory",
+  "name": "armory",
   "owner": {
     "name": "codeandkin",
     "email": "rcmleung@gmail.com"
   },
   "metadata": {
-    "description": "codeandkin armory - curated skills for AI-powered development",
+    "description": "A codeandkin plugin. Curated skills for AI-powered development.",
     "version": "0.1.0"
   },
   "plugins": [

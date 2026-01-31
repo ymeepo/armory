@@ -1,30 +1,33 @@
-# codeandkin armory
+# armory
 
-Curated skills for AI-powered development.
+A codeandkin plugin. Curated skills for AI-powered development.
 
 ## Installation
 
-Add to your Claude Code settings (`.claude/settings.json`):
+First, add the marketplace:
 
-```json
-{
-  "plugins": ["github-personal:ymeepo/armory.git"]
-}
+```shell
+/plugin marketplace add codeandkin/armory
 ```
 
-Or clone and add locally:
+Then install plugins:
+
+```shell
+/plugin install web-ui@codeandkin-armory
+/plugin install git-personal@codeandkin-armory
+```
+
+Skills will be available under each plugin's namespace (e.g., `web-ui:`, `git-personal:`).
+
+## Local Development
+
+To test the plugin locally during development, use the `--plugin-dir` flag:
 
 ```bash
-git clone github-personal:ymeepo/armory.git
+claude --plugin-dir /path/to/armory
 ```
 
-Then add to settings:
-
-```json
-{
-  "plugins": ["/path/to/armory"]
-}
-```
+Skills will be available under the `armory:` namespace (e.g., `armory:web-ui`).
 
 ## Available Skills
 
