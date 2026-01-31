@@ -1,71 +1,72 @@
-# Armory
+# codeandkin armory
 
-Claude plugin marketplace for AI-powered development skills.
-
-## Overview
-
-Armory is a collection of agent skills designed to accelerate development workflows with Claude Code. Each skill provides specialized knowledge and best practices that Claude can apply automatically when relevant.
+Curated skills for AI-powered development.
 
 ## Installation
 
-Add armory as a plugin source in your Claude Code settings:
+Add to your Claude Code settings (`.claude/settings.json`):
 
-```bash
-claude plugins add armory /path/to/armory
+```json
+{
+  "plugins": ["github-personal:ymeepo/armory.git"]
+}
 ```
 
-Or install specific plugins:
+Or clone and add locally:
 
 ```bash
-claude plugins install web-ui@armory
+git clone github-personal:ymeepo/armory.git
 ```
 
-## Available Plugins
+Then add to settings:
+
+```json
+{
+  "plugins": ["/path/to/armory"]
+}
+```
+
+## Available Skills
 
 ### web-ui
 
-UI prototyping and interface design skills.
+Build polished, production-ready web interfaces. Guides to shadcn/ui, Cult UI, and Tailwind CSS.
 
-**Skills:**
-- `web-ui-prototyper` - Creates polished, production-ready web UI interfaces
+### git-personal
+
+Personal GitHub account configuration with SSH alias, identity settings, and commit guidelines.
 
 ## Project Structure
 
 ```
 armory/
 ├── .claude-plugin/
-│   └── marketplace.json     # Plugin marketplace configuration
-├── skills/                  # Agent reference skills
-│   └── web-ui-prototyper/
+│   └── marketplace.json
+├── skills/
+│   ├── web-ui/
+│   │   └── SKILL.md
+│   └── git-personal/
 │       └── SKILL.md
-├── commands/                # User-invoked interactive workflows
 └── README.md
 ```
 
-## Creating New Skills
+## Creating Skills
 
-1. Create a new directory under `skills/`
-2. Add a `SKILL.md` file with YAML frontmatter:
+1. Create a directory under `skills/`
+2. Add `SKILL.md` with YAML frontmatter:
 
 ```yaml
 ---
-name: your-skill-name
-description: Brief description of when to use this skill.
+name: skill-name
+description: When to trigger this skill.
 ---
 
 # Skill Title
 
-[Skill content and instructions for Claude]
+[Instructions for Claude]
 ```
 
-3. Update `marketplace.json` to include your skill
-
-## Contributing
-
-1. Fork the repository
-2. Create a new skill in `skills/`
-3. Test with Claude Code
-4. Submit a pull request
+3. Update `marketplace.json` to include the skill
 
 ## License
 
